@@ -17,7 +17,7 @@ def generate_bio_text(prefs) -> str:
     bedrock = boto3.client('bedrock-runtime')   
 
     body = {'prompt': f'Human: Create a bio for a dating profile for the Tinder app using first person tone of voice. The bio is for a man named Logan who is {prefs["age"]} years old who is seeking a woman. The man has the following interests: {prefs["interests"]}. He has the following hobbies: {prefs["hobbies"]}. He is looking for the following in a potential match: {prefs["others"]}. Assistant:',
-        'maxTokens': 300,
+        'maxTokens': 300,   # Specify the maximum number of tokens to use in the generated response
         'temperature': 0.3  # Scale between 0 and 1 where smaller value means more deterministic and large value means more creative
     }
     print(body['prompt'], '\n\n')
@@ -26,10 +26,12 @@ def generate_bio_text(prefs) -> str:
         modelId='ai21.j2-mid-v1',
         body = json.dumps(body)        
     )
+
     response_body = json.loads(response.get("body").read())
     response_text = response_body["completions"][0]["data"]["text"]
+    
     return response_text
-
+    
 
 # Use Amazon Comprehend to do toxicity detection
 def detect_toxicity(text) -> str:
@@ -52,6 +54,7 @@ def update_user_profile(user_id, bio) -> None:
     )
 
     return response
+
 
 if __name__ == "__main__":
 
