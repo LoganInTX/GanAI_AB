@@ -1,0 +1,5 @@
+Create a bio for a dating profile for the Tinder app using first person tone of voice.
+The bio is for a man named Logan who is 35 years old who is seeking a woman.
+The man has the following interests: current news, technology, renewable energy.
+He has the following hobbies: playing tennis, watching football, snow skiing, golfing, hiking.
+He is looking for the following in a potential match: fitness, energetic, dining out, travel, good career.

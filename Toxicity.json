@@ -1,0 +1,27 @@
+{
+  "ResultList": [
+    {
+      "Labels": [
+        { "Name": "PROFANITY", "Score": 0.019099999219179153 },
+        { "Name": "HATE_SPEECH", "Score": 0.02500000037252903 },
+        { "Name": "INSULT", "Score": 0.10109999775886536 },
+        { "Name": "GRAPHIC", "Score": 0.019500000402331352 },
+        { "Name": "HARASSMENT_OR_ABUSE", "Score": 0.12080000340938568 },
+        { "Name": "SEXUAL", "Score": 0.10649999976158142 },
+        { "Name": "VIOLENCE_OR_THREAT", "Score": 0.03590000048279762 }
+      ],
+      "Toxicity": 0.10019999742507935
+    }
+  ],
+  "ResponseMetadata": {
+    "RequestId": "56893d7b-6a90-451a-a908-5db796a79078",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "56893d7b-6a90-451a-a908-5db796a79078",
+      "content-type": "application/x-amz-json-1.1",
+      "content-length": "418",
+      "date": "Thu, 01 Feb 2024 16:57:49 GMT"
+    },
+    "RetryAttempts": 0
+  }
+}
